@@ -9,7 +9,9 @@ body{
     font-size: 12px;
     line-height: 1.5;
 }
-
+input{
+    border: none;
+}
 
 
 /*layout*/
@@ -24,6 +26,7 @@ body{
     flex-grow: 1;
 }
 
+
 /*aside*/
 .page > aside{
     display: flex;
@@ -33,17 +36,21 @@ body{
     text-align: center;
     padding: 10px;
 }
-.songList{
+.newSong.active{
+    background: #ddd;
+}
+#songList-container{
     flex-grow: 1;
+}
+.songList{
     text-align: left;
-    border-top: 1px solid #999;
 }
 .songList > li{
     border-bottom: 1px solid #ddd;
     padding: 10px;
 }
 .songList > li.active{
-    background: #ccc;
+    background: #ddd;
 }
 .uploadArea{}
 .draggable{
@@ -56,4 +63,35 @@ body{
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+}
+main{
+    background: #ddd;
+}
+main > h1{
+    padding: 20px;
+}
+main > form{
+    font-size: 14px;
+}
+main > form > div{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+}
+main > form > div > label{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 4em;
+    margin-right: 5px;
+}
+main > form > div > input,
+main > form > div > button{
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
+}
+main > form > div.action{
+    margin-left: calc(4em + 5px);
 }
