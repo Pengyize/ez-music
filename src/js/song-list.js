@@ -8,7 +8,6 @@
         `,
         render(data){
             let $el = $(this.el);
-
             $el.html(this.template);
             let {songs} = data;
             let liList = songs.map((song) => $('<li></li>').text(song.name).attr('data-song-id',song.id));
@@ -44,11 +43,11 @@
         init(view,model){
             this.view = view;
             this.model = model;
+            console.log('model1',this.model.data)
             this.view.render(this.model.data);
             this.bindEvents();
             this.bindEventHub();
             this.getAllSongs();
-
         },
         getAllSongs(){
             return this.model.find().then(()=>{
@@ -59,7 +58,15 @@
             $(this.view.el).on('click','li',(e)=>{  //事件委托，el是'li'的父元素'ol'，委托'ol'监听他的所有儿子'li'
                 this.view.activeItem(e.currentTarget);
                 let songId = e.currentTarget.getAttribute('data-song-id');
-                window.eventHub.emit('select',{id: songId});
+                let data;
+                let songs = this.model.data.songs;
+                for(let i=0; i < songs.length; i++){
+                    if(songs[i].id === songId){
+                        data = songs[i];
+                        break;
+                    }
+                }
+                window.eventHub.emit('select',JSON.parse(JSON.stringify(data)));
             })
         },
         bindEventHub(){
