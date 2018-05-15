@@ -5,7 +5,7 @@ window.eventHub = {
     emit(eventName, data){  //发布
         for(let key in this.events){
             if(key === eventName){
-                let fnList = this.events[key]
+                let fnList = this.events[key];
                 fnList.map((fn)=>{
                     fn.call(undefined,data)
                 })
@@ -18,5 +18,4 @@ window.eventHub = {
         }
         this.events[eventName].push(fn)
     }
-
 }

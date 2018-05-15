@@ -36,12 +36,10 @@
                 html = html.replace(`__${string}__`,data[string] || '')
             })
             $(this.el).html(html);
-            console.log('ok?')
             if(data.id){
                 $(this.el).prepend('<h1>编辑歌曲</h1>')
             }else{
                 $(this.el).prepend('<h1>新建歌曲</h1>')
-
             }
         },
         reset(){
@@ -83,10 +81,16 @@
                 this.model.data = data;
                 this.view.render(this.model.data)
             });
-            window.eventHub.on('new',()=>{
-                this.model.data = {
-                    name: '', url: '', id: '', singer: ''
-                };
+            window.eventHub.on('new',(data)=>{
+                console.log('data123',data)
+                if(this.model.data.id){
+                    this.model.data = {
+                        name: '', url: '', id: '', singer: ''
+                    };
+                }else{
+                    Object.assign(this.model.data,data);
+                }
+
                 this.view.render(this.model.data)
             })
         },
