@@ -43,7 +43,7 @@
                         });
                     },
                     'BeforeUpload': function(up, file) {
-                        // 每个文件上传前,处理相关的事情
+                        window.eventHub.emit('beforeUpload')
                     },
                     'UploadProgress': function(up, file) {
                         // 每个文件上传时,处理相关的事情
@@ -51,6 +51,7 @@
                     //文件上传成功后调用'FileUploaded'
                     'FileUploaded': function(up, file, info) {
                         // 获取上传成功后文件的外链
+                        window.eventHub.emit('afterUpload')
                         var domain = up.getOption('domain');
                         var res = JSON.parse(info.response);
                         var sourceLink = 'http://' + domain + '/' + encodeURI(res.key); //获取上传成功后的文件的Url
