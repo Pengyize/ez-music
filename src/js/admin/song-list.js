@@ -91,6 +91,7 @@
                     }
                 }
                 this.view.render(this.model.data);
+                alert('保存成功')
             })
         }
     }

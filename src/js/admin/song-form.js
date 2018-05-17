@@ -24,13 +24,19 @@
                 </label>
                 <input name="url" type="text" value="__url__">
             </div>
+            <div class="row">
+                <label for="">
+                    封面
+                </label>
+                <input name="cover" type="text" value="__cover__">
+            </div>
             <div class="row action">
                 <button type="submit">保存</button>
             </div>
         </form>
         `,
         render(data = {}){  //若没有传data或data是undefined，就默认等于空对象
-            let placeholders = ['name', 'url', 'singer', 'id'];
+            let placeholders = ['name', 'url', 'singer', 'id', 'cover'];
             let html = this.template;
             placeholders.map((string)=>{
                 html = html.replace(`__${string}__`,data[string] || '')
@@ -48,34 +54,68 @@
 
     }
     let model = {
-        data: {name: '',singer: '', url: '', id: ''},
+        data: {name: '',singer: '', url: '', id: '', cover:''},
         create(data){
-            // 声明类型
-            var Song = AV.Object.extend('Song');
-            // 新建对象
-            var song = new Song();
-            // 设置名称
-            song.set('name',data.name);
-            song.set('singer',data.singer);
-            song.set('url',data.url);
-            return song.save().then((newSong) => {
-                let {id , attributes} = newSong;
-                Object.assign(this.data,{id,...attributes})
-            }, (error) => {
-                console.error(error);
-            });
+            let singer = $('input[name=singer]').val();
+            let name = $('input[name=name]').val();
+            let url = $('input[name=url]').val();
+            let cover = $('input[name=cover]').val();
+            if (!name && !singer && !url && !cover){
+                alert('请输入内容~')
+            }else if(!name){
+                alert('你没有输入歌名哦~')
+            }else if(!singer) {
+                alert('你没有输入歌手哦~')
+            }else if(!url) {
+                alert('你没有输入外链哦~')
+            }else if(!cover) {
+                alert('你没有输入封面url哦~')
+            }else {
+                // 声明类型
+                var Song = AV.Object.extend('Song');
+                // 新建对象
+                var song = new Song();
+                // 设置名称
+                song.set('name', data.name);
+                song.set('singer', data.singer);
+                song.set('url', data.url);
+                song.set('cover', data.cover);
+                return song.save().then((newSong) => {
+                    let {id, attributes} = newSong;
+                    Object.assign(this.data, {id, ...attributes})
+                }, (error) => {
+                    console.error(error);
+                });
+            }
         },
         update(data){
-            var song = AV.Object.createWithoutData('Song', this.data.id);
-            // 修改属性
-            song.set('name',data.name);
-            song.set('singer',data.singer);
-            song.set('url',data.url);
-            // 保存到云端
-            return song.save().then((response)=>{
-                Object.assign(this.data, data)
-                return response
-            })
+            let singer = $('input[name=singer]').val();
+            let name = $('input[name=name]').val()
+            let url = $('input[name=url]').val()
+            let cover = $('input[name=cover]').val()
+            if (!name && !singer && !url && !cover){
+                alert('请输入内容~')
+            }else if(!name){
+                alert('你没有输入歌名哦~')
+            }else if(!singer) {
+                alert('你没有输入歌手哦~')
+            }else if(!url) {
+                alert('你没有输入外链哦~')
+            }else if(!cover) {
+                alert('你没有输入封面url哦~')
+            }else {
+                var song = AV.Object.createWithoutData('Song', this.data.id);
+                // 修改属性
+                song.set('name', data.name);
+                song.set('singer', data.singer);
+                song.set('url', data.url);
+                song.set('cover', data.cover);
+                // 保存到云端
+                return song.save().then((response) => {
+                    Object.assign(this.data, data)
+                    return response
+                })
+            }
         }
      };
     let controller = {
@@ -92,7 +132,7 @@
             window.eventHub.on('new',(data)=>{
                 if(this.model.data.id){
                     this.model.data = {
-                        name: '', url: '', id: '', singer: ''
+                        name: '', url: '', id: '', singer: '', cover: ''
                     };
                 }else{
                     Object.assign(this.model.data,data);
@@ -102,7 +142,7 @@
             })
         },
         create(){
-            let  needs = 'name singer url'.split(' ');
+            let  needs = 'name singer url cover'.split(' ');
             let data = {}
             needs.map((string) => {
                 data[string] = this.view.$el.find(`[name = "${string}"]`).val();
@@ -114,7 +154,7 @@
                 })
         },
         update(){
-            let  needs = 'name singer url'.split(' ');
+            let  needs = 'name singer url cover'.split(' ');
             let data = {};
             needs.map((string) => {
                 data[string] = this.view.$el.find(`[name = "${string}"]`).val();
@@ -126,12 +166,14 @@
         },
         bindEvents(){
             this.view.$el.on('submit','form',(e)=>{ //事件委托，委托main监听form的提交事件
-                e.preventDefault()
-                if(this.model.data.id){
-                    this.update();
-                }else{
-                    this.create();
-                }
+
+                    e.preventDefault()
+                    if(this.model.data.id){
+                        this.update();
+                    }else{
+                        this.create();
+                    }
+
                 return;
             })
         }
