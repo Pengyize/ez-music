@@ -30,13 +30,19 @@
                 </label>
                 <input name="cover" type="text" value="__cover__">
             </div>
+            <div class="row">
+                <label>
+                    歌词
+                </label>
+                <textarea name="lyrics" cols="100" rows="10" >__lyrics__</textarea>
+            </div>
             <div class="row action">
                 <button type="submit">保存</button>
             </div>
         </form>
         `,
         render(data = {}){  //若没有传data或data是undefined，就默认等于空对象
-            let placeholders = ['name', 'url', 'singer', 'id', 'cover'];
+            let placeholders = ['name', 'url', 'singer', 'id', 'cover', 'lyrics', 'test'];
             let html = this.template;
             placeholders.map((string)=>{
                 html = html.replace(`__${string}__`,data[string] || '')
@@ -51,10 +57,9 @@
         reset(){
             this.render({});
         }
-
     }
     let model = {
-        data: {name: '',singer: '', url: '', id: '', cover:''},
+        data: {name: '',singer: '', url: '', id: '', cover:'', lyrics:'', test:''},
         create(data){
             let singer = $('input[name=singer]').val();
             let name = $('input[name=name]').val();
@@ -80,6 +85,8 @@
                 song.set('singer', data.singer);
                 song.set('url', data.url);
                 song.set('cover', data.cover);
+                song.set('lyrics', data.lyrics);
+                song.set('test', data.test);
                 return song.save().then((newSong) => {
                     let {id, attributes} = newSong;
                     Object.assign(this.data, {id, ...attributes})
@@ -110,6 +117,8 @@
                 song.set('singer', data.singer);
                 song.set('url', data.url);
                 song.set('cover', data.cover);
+                song.set('lyrics', data.lyrics);
+                song.set('test', data.test);
                 // 保存到云端
                 return song.save().then((response) => {
                     Object.assign(this.data, data)
@@ -132,7 +141,7 @@
             window.eventHub.on('new',(data)=>{
                 if(this.model.data.id){
                     this.model.data = {
-                        name: '', url: '', id: '', singer: '', cover: ''
+                        name: '', url: '', id: '', singer: '', cover: '', lyrics: '', test:''
                     };
                 }else{
                     Object.assign(this.model.data,data);
@@ -142,22 +151,23 @@
             })
         },
         create(){
-            let  needs = 'name singer url cover'.split(' ');
+            let  needs = 'name singer url cover lyrics test'.split(' ');
             let data = {}
             needs.map((string) => {
                 data[string] = this.view.$el.find(`[name = "${string}"]`).val();
             })
-            this.model.create(data) //一旦create，moel就会拿到最新的数据
+            this.model.create(data) //一旦create，model就会拿到最新的数据
                 .then(()=>{
                     this.view.reset();
                     window.eventHub.emit('create', JSON.parse(JSON.stringify(this.model.data)));
                 })
         },
         update(){
-            let  needs = 'name singer url cover'.split(' ');
+            let  needs = 'name singer url cover lyrics test'.split(' ');
             let data = {};
             needs.map((string) => {
                 data[string] = this.view.$el.find(`[name = "${string}"]`).val();
+                console.log('data1',data)
             });
             this.model.update(data)
                 .then(()=>{
@@ -166,14 +176,12 @@
         },
         bindEvents(){
             this.view.$el.on('submit','form',(e)=>{ //事件委托，委托main监听form的提交事件
-
                     e.preventDefault()
                     if(this.model.data.id){
                         this.update();
                     }else{
                         this.create();
                     }
-
                 return;
             })
         }
