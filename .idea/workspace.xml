@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6a4427-ac7f-4925-816a-cc5724588b69" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/css/song.css" afterPath="$PROJECT_DIR$/src/css/song.css" />
-      <change beforePath="$PROJECT_DIR$/src/js/admin/song-form.js" afterPath="$PROJECT_DIR$/src/js/admin/song-form.js" />
-      <change beforePath="$PROJECT_DIR$/src/js/song/app.js" afterPath="$PROJECT_DIR$/src/js/song/app.js" />
-      <change beforePath="$PROJECT_DIR$/src/song.html" afterPath="$PROJECT_DIR$/src/song.html" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +16,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/song/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="65" column="55" lean-forward="false" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+            <state relative-caret-position="-212">
+              <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -69,11 +65,21 @@
       <file leaf-file-name="song.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/song.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="343">
+              <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="636">
+              <caret line="100" column="9" lean-forward="false" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,8 +135,8 @@
       <find>conso</find>
       <find>filt</find>
       <find>singer</find>
-      <find>backg</find>
       <find>white</find>
+      <find>backg</find>
     </findStrings>
     <replaceStrings>
       <replace>disk</replace>
@@ -167,15 +173,15 @@
         <option value="$PROJECT_DIR$/src/js/index/tabs.js" />
         <option value="$PROJECT_DIR$/src/js/index/page-1.js" />
         <option value="$PROJECT_DIR$/src/js/index/page-1-1.js" />
-        <option value="$PROJECT_DIR$/src/index.html" />
         <option value="$PROJECT_DIR$/src/js/index/page-1-2.js" />
         <option value="$PROJECT_DIR$/src/js/song/x.js" />
         <option value="$PROJECT_DIR$/src/js/admin/upload-song.js" />
         <option value="$PROJECT_DIR$/src/js/admin/song-list.js" />
         <option value="$PROJECT_DIR$/src/js/admin/song-form.js" />
-        <option value="$PROJECT_DIR$/src/song.html" />
         <option value="$PROJECT_DIR$/src/css/song.css" />
         <option value="$PROJECT_DIR$/src/js/song/app.js" />
+        <option value="$PROJECT_DIR$/src/song.html" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
@@ -297,12 +303,12 @@
       <option name="presentableId" value="Default" />
       <updated>1526111887561</updated>
       <workItem from="1526111888869" duration="30555000" />
-      <workItem from="1526364282398" duration="61785000" />
+      <workItem from="1526364282398" duration="61942000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92340000" />
+    <option name="totallyTimeSpent" value="92497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="44" width="1440" height="877" extended-state="0" />
@@ -538,18 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="83" column="22" lean-forward="true" selection-start-line="83" selection-start-column="22" selection-end-line="83" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#ol#0;n#section#1;n#li#0;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#14302#14306#0" expanded="false" />
-            <element signature="n#style#0;n#input#0;n#li#2;n#ol#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/admin/new-song.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -616,16 +610,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/song.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/css/song.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -636,8 +620,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/song/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="65" column="55" lean-forward="false" selection-start-line="65" selection-start-column="55" selection-end-line="65" selection-end-column="55" />
+        <state relative-caret-position="-212">
+          <caret line="59" column="17" lean-forward="true" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/song.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#img#2;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="100" column="9" lean-forward="false" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
           <folding />
         </state>
       </provider>
