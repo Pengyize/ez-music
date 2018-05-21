@@ -31,6 +31,12 @@
                 <input name="cover" type="text" value="__cover__">
             </div>
             <div class="row">
+                <label for="">
+                    序号
+                </label>
+                <input name="order" type="text" value="__order__">
+            </div>
+            <div class="row">
                 <label>
                     歌词
                 </label>
@@ -42,7 +48,7 @@
         </form>
         `,
         render(data = {}){  //若没有传data或data是undefined，就默认等于空对象
-            let placeholders = ['name', 'url', 'singer', 'id', 'cover', 'lyrics', 'test'];
+            let placeholders = ['name', 'url', 'singer', 'id', 'cover', 'lyrics', 'order'];
             let html = this.template;
             placeholders.map((string)=>{
                 html = html.replace(`__${string}__`,data[string] || '')
@@ -59,7 +65,7 @@
         }
     }
     let model = {
-        data: {name: '',singer: '', url: '', id: '', cover:'', lyrics:'', test:''},
+        data: {name: '',singer: '', url: '', id: '', cover:'', lyrics:'', order:''},
         create(data){
             let singer = $('input[name=singer]').val();
             let name = $('input[name=name]').val();
@@ -86,7 +92,7 @@
                 song.set('url', data.url);
                 song.set('cover', data.cover);
                 song.set('lyrics', data.lyrics);
-                song.set('test', data.test);
+                song.set('order', data.order);
                 return song.save().then((newSong) => {
                     let {id, attributes} = newSong;
                     Object.assign(this.data, {id, ...attributes})
@@ -118,7 +124,7 @@
                 song.set('url', data.url);
                 song.set('cover', data.cover);
                 song.set('lyrics', data.lyrics);
-                song.set('test', data.test);
+                song.set('order', data.order);
                 // 保存到云端
                 return song.save().then((response) => {
                     Object.assign(this.data, data)
@@ -141,7 +147,7 @@
             window.eventHub.on('new',(data)=>{
                 if(this.model.data.id){
                     this.model.data = {
-                        name: '', url: '', id: '', singer: '', cover: '', lyrics: '', test:''
+                        name: '', url: '', id: '', singer: '', cover: '', lyrics: '', order:''
                     };
                 }else{
                     Object.assign(this.model.data,data);
@@ -151,7 +157,7 @@
             })
         },
         create(){
-            let  needs = 'name singer url cover lyrics test'.split(' ');
+            let  needs = 'name singer url cover lyrics order'.split(' ');
             let data = {}
             needs.map((string) => {
                 data[string] = this.view.$el.find(`[name = "${string}"]`).val();
@@ -163,7 +169,7 @@
                 })
         },
         update(){
-            let  needs = 'name singer url cover lyrics test'.split(' ');
+            let  needs = 'name singer url cover lyrics order'.split(' ');
             let data = {};
             needs.map((string) => {
                 data[string] = this.view.$el.find(`[name = "${string}"]`).val();

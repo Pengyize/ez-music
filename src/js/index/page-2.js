@@ -18,6 +18,7 @@
             this.model = model;
             this.view.init();
             this.bindEventHub();
+            this.loadModule1();
         },
         bindEventHub(){
             window.eventHub.on('selectTab',(tabName)=>{
@@ -27,7 +28,12 @@
                     this.view.hide()
                 }
             })
-        }
+        },
+        loadModule1(){
+            let script1 = document.createElement('script');
+            script1.src = './js/index/page-2-2.js';
+            document.body.appendChild(script1)
+        },
     }
     controller.init(view,model)
 }

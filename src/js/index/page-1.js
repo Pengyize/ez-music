@@ -34,7 +34,6 @@
             let script1 = document.createElement('script');
             script1.src = './js/index/page-1-1.js';
             script1.onload = function () {
-                console.log('1')
             }
             document.body.appendChild(script1)
         },
@@ -42,7 +41,6 @@
             let script2 = document.createElement('script');
             script2.src = './js/index/page-1-2.js';
             script2.onload = function () {
-                console.log('2')
             }
             document.body.appendChild(script2)
         }

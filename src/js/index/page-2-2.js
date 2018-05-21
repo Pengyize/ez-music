@@ -1,21 +1,24 @@
 {
     let view = {
-        el: 'section.songs',
+        el: 'ul.song-list',
         template: `
         <li>
-                 <h3>{{song.name}}</h3>
-                 <p>
+                 <span>{{song.order}}</span>
+                 <div class="hotSongWrapper">
+                    <h3>{{song.name}}</h3>
+                    <p>
                         <svg class="icon icon-sq">
                             <use xlink:href="#icon-sq"></use>
                         </svg>
-                     {{song.singer}}
-                  </p>
-                  <a class="playButton" href="./song.html?id={{song.id}}">
-                     <svg class="icon icon-play">
-                         <use xlink:href="#icon-play"></use>
-                      </svg>
-                  </a>
-                </li>  
+                        {{song.singer}}
+                    </p>
+                    <a class="playButton" href="./song.html?id={{song.id}}">
+                        <svg class="icon icon-play">
+                            <use xlink:href="#icon-play"></use>
+                        </svg>
+                    </a>
+                 </div>
+         </li>  
         
         `,
 
@@ -28,11 +31,11 @@
                 let $li = $(this.template
                     .replace('{{song.name}}',song.name)
                     .replace('{{song.singer}}',song.singer)
-                    .replace('{{song.id}}',song.id))
-                this.$el.find('ol.list').append($li);
-
+                    .replace('{{song.id}}',song.id)
+                    .replace('{{song.order}}',song.order))
+                this.$el.append($li);
             })
-            $('#lastestMusicLoading').remove()
+            $('#lastestMusicLoading-2').remove()
         }
     }
     let model = {

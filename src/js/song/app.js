@@ -84,12 +84,13 @@
                 lyrics: '',
                 test: ''
             },
-            status: 'playing',
+            status: 'paused',
         },
         getId(id){
             var query = new AV.Query('Song');
             return query.get(id).then((song) =>{
-                Object.assign(this.data.song, {id: song.id, ...song.attributes})
+                Object.assign(this.data.song, {id: song.id})
+                Object.assign(this.data.song, song.attributes)
                 return song
             })
         }
@@ -102,26 +103,27 @@
             let id = this.getSongId();
             this.model.getId(id).then(()=>{
                 this.view.render(this.model.data)
-                this.view.play()
             });
             this.bindEvents();
         },
         bindEvents(){
-            $(this.view.el).on('click','.icon-play',()=>{
-                this.model.data.status = 'playing';
-                this.view.render(this.model.data);
-                this.view.play()
-            });
-            $(this.view.el).on('click','.icon-pause',()=>{
-                this.model.data.status = 'paused';
-                this.view.render(this.model.data);
-                this.view.pause()
+            $(this.view.el).on('click',()=>{
+                if(this.model.data.status === 'paused'){
+                    this.model.data.status = 'playing';
+                    this.view.render(this.model.data);
+                    this.view.play()
+                }else{
+                    this.model.data.status = 'paused';
+                    this.view.render(this.model.data);
+                    this.view.pause()
+                }
             });
 
             window.eventHub.on('songEnd', ()=>{
                 this.model.data.status = 'paused';
                 this.view.render(this.model.data);
             })
+
 
         },
         getSongId(){
