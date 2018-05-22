@@ -20,4 +20,4 @@
 - 完成新建歌曲、编辑歌曲页面制作
 
 ## Solved issues
-[我的简书博客](https://www.jianshu.com/p/cea1fa2b80e3）
+[我的简书博客](https://www.jianshu.com/p/cea1fa2b80e3)
