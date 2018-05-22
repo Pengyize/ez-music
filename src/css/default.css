@@ -8,19 +8,45 @@ a{color: inherit; text-decoration: none;}
 body{
     font-size: 12px;
     line-height: 1.5;
+    height: 100vh;
+    display: flex;
+    color: #333;
 }
-input{
-    border: none;
+input,
+textarea{
+    border: 1px solid #bbbbbb;
+
+}
+input:focus,
+textarea:focus{
+    outline: none;
+}
+textarea{
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+    resize: none;
 }
 
 
 /*layout*/
 .page{
+    margin: auto;
+    width: 1000px;
+    height: 670px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(64, 64, 64, 0.7);
+    transition: all ease .3s;
+    overflow: hidden;
     display: flex;
-    height: 100vh;
+    position: relative;
+    flex-wrap: wrap;
+}
+.page > div{
+    width: 90%;
 }
 .page > aside{
-    width: 200px;
+
 }
 .page > main{
     flex-grow: 1;
@@ -31,16 +57,101 @@ input{
 .page > aside{
     display: flex;
     flex-direction: column;
+    width: 200px;
+    margin-top: -14px;
 }
+header{
+    height: 60px;
+    background: #ba2502;
+    width: 100%;
+}
+
+header .logo{
+    display: flex;
+    /*justify-content: space-between;*/
+    align-items: center;
+    background: #D43C33;
+    padding: 0 10px;
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+.logo > .topsvg{
+    width: 142px;height: 25px;
+    vertical-align: top;
+
+}
+.logo > span > .icon{
+    transform: scale(0.15);
+    fill: white;
+    position: absolute;
+    right: -47px;
+    top: -42px;
+}
+.logo > span > p{
+    justify-content: flex-end;
+    color: white;
+    display: inline-block;
+    padding: 5px 11px;
+    line-height: 20px;
+    position: absolute;
+    right: 20px;
+    top: calc(50% - 12px);
+    font-size: 16px;
+}
+/*.logo > .card::after{*/
+    /*content:'';*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left: 0;*/
+    /*width: 200%;*/
+    /*height: 200%;*/
+    /*border: 1px solid white;*/
+    /*border-radius: 50px;*/
+    /*transform: scale(0.5);*/
+    /*transform-origin: 0 0;*/
+/*}*/
+/*header.topbar > a{*/
+    /*color: white;*/
+    /*display: inline-block;*/
+    /*padding: 5px 11px;*/
+    /*line-height: 20px;*/
+    /*position: relative;*/
+/*}*/
+/*header.topbar > a::after{*/
+    /*content:'';*/
+    /*position: absolute;*/
+    /*top:0;*/
+    /*left: 0;*/
+    /*width: 200%;*/
+    /*height: 200%;*/
+    /*border: 1px solid white;*/
+    /*border-radius: 50px;*/
+    /*transform: scale(0.5);*/
+    /*transform-origin: 0 0;*/
+/*}*/
+
+
 .newSong{
     text-align: center;
-    padding: 10px;
+    padding: 19px 0;
+    width: 199px;
+    color: #333333;
+    border-top: 1px solid #ddd;
+    border-radius: 0 0 0 5px;
+    cursor: pointer;
+    background: #ece9e6;
+    background: linear-gradient(to top, #e6e6e6, #ffffff);
+    transition: all ease .1s;
+    border-right: 1px solid #c8c8c8;
+    font-size: 18px;
 }
-.newSong.active{
-    background: #ddd;
-}
+
 #songList-container{
     flex-grow: 1;
+    border-right: 1px solid #d8d8d8;
+    overflow: auto;
+    height:391px;
 }
 .songList{
     text-align: left;
@@ -48,30 +159,58 @@ input{
 .songList > li{
     border-bottom: 1px solid #ddd;
     padding: 10px;
+    font-size: 14px;
+}
+
+.songList > li:nth-child(2n+1){
+    background: #efefef;
+}
+.songList > li:nth-child(2n){
+    background: #f6f6f6;
 }
 .songList > li.active{
-    background: #ddd;
+    background: #c8c8c8;
 }
-.uploadArea{}
+.songList > li:hover,
+.newSong:hover{
+    color: #bb3927;
+    cursor: pointer;
+}
+
+
 .draggable{
     text-align: center ;
-    padding: 40px 20px;
-    border-radius: 10px;
-    border: 2px dashed #ccc;
+    padding: 20px 0;
+    border-radius: 5px;
+    border: 3px dashed #e3e3e3;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     cursor: pointer;
+    width: 200px;
+    z-index: 1;
+}
+.draggable > p{
+    line-height: 20px;
+    font-size: 16px;
+    color: #777;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 main{
-    background: #ddd;
+    background: #fafafa ;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    margin-top: -14px;
 }
 main > h1{
-    padding: 20px;
+    padding: 15px;
+    width: 100%;
 }
 main > form{
     font-size: 14px;
+    width: 60%;
 }
 main > form > div{
     margin-bottom: 20px;
@@ -83,17 +222,37 @@ main > form > div > label{
     align-items: center;
     justify-content: flex-end;
     width: 4em;
-    margin-right: 5px;
+    margin-right: 7px;
+    font-size: 16px;
+}
+main > form > div > input{
+    width: 399px;
+    padding: 0 10px;
+    color: #333;
 }
 main > form > div > input,
 main > form > div > button{
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
-    height: 30px;
+    height: 40px;
+    font-size: 14px;
+}
+main > form > div > button{
+    width: 180px;
+}
+main > form > div > button:hover{
+    background: #bb2a26;
+    color: white;
+    cursor: pointer;
+}
+main > form > div > button:focus{
+    outline: none;
 }
 main > form > div.action{
     margin-left: calc(4em + 5px);
+    display: flex;
+    justify-content: space-between;
 }
 
 @keyframes loading {
@@ -104,6 +263,7 @@ main > form > div.action{
         transform: scale(0.1);
     }
 }
+
 .site-loading{
     visibility: hidden;
     position: fixed;
@@ -122,7 +282,7 @@ main > form > div.action{
     display: block;
     width: 100px;
     height: 100px;
-    background: green;
+    background: #ddd;
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -131,4 +291,7 @@ main > form > div.action{
     margin-left: -50px;
     animation: loading 1s infinite alternate-reverse;
     animation-timing-function: linear;
+}
+.hide{
+    display: none;
 }

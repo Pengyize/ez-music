@@ -2,18 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6a4427-ac7f-4925-816a-cc5724588b69" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/admin.html" afterPath="$PROJECT_DIR$/src/admin.html" />
+      <change beforePath="$PROJECT_DIR$/src/css/default.css" afterPath="$PROJECT_DIR$/src/css/default.css" />
       <change beforePath="$PROJECT_DIR$/src/css/index.css" afterPath="$PROJECT_DIR$/src/css/index.css" />
-      <change beforePath="$PROJECT_DIR$/src/css/song.css" afterPath="$PROJECT_DIR$/src/css/song.css" />
-      <change beforePath="$PROJECT_DIR$/src/image/pikachu.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/image/下载.jpeg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/image/1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/image/3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/image/gary.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/image/yueyu.jpg" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/js/admin/new-song.js" afterPath="$PROJECT_DIR$/src/js/admin/new-song.js" />
       <change beforePath="$PROJECT_DIR$/src/js/admin/song-form.js" afterPath="$PROJECT_DIR$/src/js/admin/song-form.js" />
-      <change beforePath="$PROJECT_DIR$/src/js/index/page-1-2.js" afterPath="$PROJECT_DIR$/src/js/index/page-1-2.js" />
-      <change beforePath="$PROJECT_DIR$/src/js/index/page-1.js" afterPath="$PROJECT_DIR$/src/js/index/page-1.js" />
       <change beforePath="$PROJECT_DIR$/src/js/index/page-2.js" afterPath="$PROJECT_DIR$/src/js/index/page-2.js" />
-      <change beforePath="$PROJECT_DIR$/src/js/index/tabs.js" afterPath="$PROJECT_DIR$/src/js/index/tabs.js" />
-      <change beforePath="$PROJECT_DIR$/src/js/song/app.js" afterPath="$PROJECT_DIR$/src/js/song/app.js" />
+      <change beforePath="$PROJECT_DIR$/src/js/index/page-3.js" afterPath="$PROJECT_DIR$/src/js/index/page-3.js" />
       <change beforePath="$PROJECT_DIR$/src/song.html" afterPath="$PROJECT_DIR$/src/song.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -28,31 +30,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="default.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/css/default.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="359">
+              <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="472">
+              <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.html">
+      <file leaf-file-name="new-song.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/admin/new-song.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="61" column="45" lean-forward="false" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+            <state relative-caret-position="32">
+              <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="song-list.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="song-list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/admin/song-list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="86">
-              <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+            <state relative-caret-position="-16">
+              <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
               <folding>
                 <marker date="1526553243280" expanded="true" signature="101:132" ph="..." />
               </folding>
@@ -60,11 +82,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="song.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/song.css">
+      <file leaf-file-name="upload-song.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/admin/upload-song.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="-16">
+              <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="50" />
+              <folding>
+                <marker date="1526493116209" expanded="true" signature="113:292" ph="..." />
+                <marker date="1526493116209" expanded="true" signature="174:273" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="song-form.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/admin/song-form.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="202" column="38" lean-forward="false" selection-start-line="202" selection-start-column="38" selection-end-line="202" selection-end-column="38" />
+              <folding>
+                <marker date="1526987010176" expanded="true" signature="164:1532" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="194:357" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="225:273" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="387:554" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="418:466" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="584:745" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="615:663" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="775:940" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="806:854" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="970:1135" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="1001:1049" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="1174:1348" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="1198:1246" ph="..." />
+                <marker date="1526987010176" expanded="true" signature="1385:1516" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="loading.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/admin/loading.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -83,36 +143,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>selectTab</find>
-      <find>icon-pause</find>
-      <find>text</find>
-      <find>animation</find>
-      <find>circle</find>
-      <find>loading</find>
-      <find>position: a</find>
-      <find>tab-c</find>
-      <find>render</find>
-      <find>stic</find>
-      <find>songs</find>
-      <find>song-list</find>
-      <find>border-bottom</find>
-      <find>bg</find>
-      <find>noCollapse</find>
-      <find>page</find>
+      <find>new</find>
+      <find>upload</find>
+      <find>label</find>
+      <find>16</find>
+      <find>h1</find>
+      <find>input</find>
+      <find>button</find>
+      <find>.form</find>
+      <find>save</find>
+      <find>click</find>
+      <find>hover</find>
       <find>conso</find>
-      <find>loadgin</find>
-      <find>icon</find>
-      <find>sea</find>
-      <find>fill</find>
-      <find>svg</find>
-      <find>h2</find>
-      <find>tab</find>
-      <find>searc</find>
-      <find>hot</find>
-      <find>cons</find>
-      <find>下载</find>
-      <find>page-2</find>
-      <find>anima</find>
+      <find>保存成功</find>
+      <find>emit('new'</find>
+      <find>on('new'</find>
+      <find>position: a</find>
+      <find>overf</find>
+      <find>up</find>
+      <find>.song</find>
+      <find>'new'</find>
+      <find>delete</find>
+      <find>main</find>
+      <find>anchor</find>
+      <find>aside</find>
+      <find>彭奕泽</find>
+      <find>topbar</find>
+      <find>header</find>
+      <find>card</find>
+      <find>编辑</find>
+      <find>logo</find>
     </findStrings>
     <replaceStrings>
       <replace>disk</replace>
@@ -137,19 +197,15 @@
         <option value="$PROJECT_DIR$/src/js/song-list.js" />
         <option value="$PROJECT_DIR$/src/js/upload-song.js" />
         <option value="$PROJECT_DIR$/src/js/loading.js" />
-        <option value="$PROJECT_DIR$/src/css/default.css" />
         <option value="/Volumes/OAE/WS-workspace/personal website1/index.html" />
         <option value="/Volumes/OAE/WS-workspace/personal website1/html/movie/movie.html" />
         <option value="/Volumes/OAE/WS-workspace/personal website1/html/music/music.html" />
         <option value="/Volumes/OAE/WS-workspace/personal website1/my journal/my journal.html" />
-        <option value="$PROJECT_DIR$/src/admin.html" />
-        <option value="$PROJECT_DIR$/src/js/index/page-3.js" />
         <option value="$PROJECT_DIR$/src/js/index/page-1-1.js" />
         <option value="$PROJECT_DIR$/src/js/song/x.js" />
         <option value="$PROJECT_DIR$/src/js/admin/upload-song.js" />
         <option value="$PROJECT_DIR$/src/js/admin/song-list.js" />
         <option value="$PROJECT_DIR$/src/js/index/tabs.js" />
-        <option value="$PROJECT_DIR$/src/js/song/app.js" />
         <option value="$PROJECT_DIR$/test2.js" />
         <option value="$PROJECT_DIR$/test3.js" />
         <option value="$PROJECT_DIR$/test4.js" />
@@ -164,15 +220,22 @@
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/test.js" />
         <option value="$PROJECT_DIR$/src/js/index/page-1-2.js" />
-        <option value="$PROJECT_DIR$/src/js/admin/song-form.js" />
-        <option value="$PROJECT_DIR$/src/js/index/page-2.js" />
         <option value="$PROJECT_DIR$/src/js/index/page-1.js" />
-        <option value="$PROJECT_DIR$/src/song.html" />
-        <option value="$PROJECT_DIR$/src/js/index/page-2-2.js" />
         <option value="$PROJECT_DIR$/src/js/index/smoothly-to-anchor.js" />
-        <option value="$PROJECT_DIR$/src/css/index.css" />
         <option value="$PROJECT_DIR$/src/css/song.css" />
+        <option value="$PROJECT_DIR$/src/js/index/page-3-3.js" />
+        <option value="$PROJECT_DIR$/src/js/index/page-2.js" />
+        <option value="$PROJECT_DIR$/src/js/index/page-3-2.js" />
+        <option value="$PROJECT_DIR$/src/song.html" />
+        <option value="$PROJECT_DIR$/src/js/song/app.js" />
+        <option value="$PROJECT_DIR$/src/js/index/page-2-2.js" />
+        <option value="$PROJECT_DIR$/src/js/index/page-3.js" />
+        <option value="$PROJECT_DIR$/src/js/admin/new-song.js" />
+        <option value="$PROJECT_DIR$/src/js/admin/song-form.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/css/index.css" />
+        <option value="$PROJECT_DIR$/src/admin.html" />
+        <option value="$PROJECT_DIR$/src/css/default.css" />
       </list>
     </option>
   </component>
@@ -188,8 +251,7 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="46" />
+    <option name="y" value="45" />
     <option name="width" value="1440" />
     <option name="height" value="868" />
   </component>
@@ -213,7 +275,7 @@
     <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -226,43 +288,11 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="ez-music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ez-music" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ez-music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ez-music" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ez-music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ez-music" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ez-music" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ez-music" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-              <item name="initializers" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -296,15 +326,15 @@
       <updated>1526111887561</updated>
       <workItem from="1526111888869" duration="30555000" />
       <workItem from="1526364282398" duration="98312000" />
-      <workItem from="1526870873153" duration="6127000" />
+      <workItem from="1526870873153" duration="40322000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134994000" />
+    <option name="totallyTimeSpent" value="169189000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="46" width="1440" height="868" extended-state="0" />
+    <frame x="0" y="45" width="1440" height="868" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -335,19 +365,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="9" />
+      <option name="time" value="11" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/song-form.js" />
     <entry file="file://$PROJECT_DIR$/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -375,13 +397,6 @@
     <entry file="file://$PROJECT_DIR$/src/js/song-form.js" />
     <entry file="file://$PROJECT_DIR$/src/js/event-hub.js" />
     <entry file="file://$PROJECT_DIR$/src/js/loading.js" />
-    <entry file="file://$PROJECT_DIR$/src/css/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="102" column="9" lean-forward="true" selection-start-line="102" selection-start-column="9" selection-end-line="102" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/song-list.js" />
     <entry file="file://$PROJECT_DIR$/src/js/upload-song.js" />
     <entry file="file:///Volumes/OAE/WS-workspace/personal website1/html/music/music.html" />
@@ -396,58 +411,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/admin/new-song.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="16" column="46" lean-forward="true" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/admin/event-hub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/admin/upload-song.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-303">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/song/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/index/tabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/index/page-3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test3.js" />
     <entry file="file://$PROJECT_DIR$/test4.js" />
     <entry file="file://$PROJECT_DIR$/test5.js" />
@@ -456,6 +419,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="124" column="18" lean-forward="false" selection-start-line="124" selection-start-column="18" selection-end-line="124" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -468,88 +432,10 @@
     <entry file="file://$PROJECT_DIR$/test.css" />
     <entry file="file://$PROJECT_DIR$/test.html" />
     <entry file="file://$PROJECT_DIR$/test.js" />
-    <entry file="file://$PROJECT_DIR$/src/js/index/page-2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/admin/song-form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="48" column="10" lean-forward="false" selection-start-line="48" selection-start-column="10" selection-end-line="48" selection-end-column="10" />
-          <folding>
-            <marker date="1526806293317" expanded="true" signature="164:1462" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="194:357" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="225:273" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="387:554" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="418:466" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="584:745" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="615:663" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="775:940" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="806:854" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="970:1135" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="1001:1049" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="1165:1340" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="1189:1237" ph="..." />
-            <marker date="1526806293317" expanded="true" signature="1377:1446" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/index/page-1-2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="34" column="12" lean-forward="false" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="46" />
-          <folding>
-            <marker date="1526803649380" expanded="true" signature="79:604" ph="..." />
-            <marker date="1526803649380" expanded="true" signature="140:344" ph="..." />
-            <marker date="1526803649380" expanded="true" signature="191:284" ph="..." />
-            <marker date="1526803649380" expanded="true" signature="419:582" ph="..." />
-            <marker date="1526803649380" expanded="true" signature="421:582" ph="..." />
-            <marker date="1526803649380" expanded="true" signature="469:559" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/js/index/page-1.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="946">
           <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/index/page-2-2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1526875794254" expanded="true" signature="78:102" ph="..." />
-            <marker date="1526875794254" expanded="true" signature="78:734" ph="..." />
-            <marker date="1526875794254" expanded="true" signature="169:719" ph="..." />
-            <marker date="1526875794254" expanded="true" signature="236:445" ph="..." />
-            <marker date="1526875794254" expanded="true" signature="287:380" ph="..." />
-            <marker date="1526875794254" expanded="true" signature="522:695" ph="..." />
-            <marker date="1526875794254" expanded="true" signature="575:670" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/song.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="51" column="62" lean-forward="false" selection-start-line="51" selection-start-column="62" selection-end-line="51" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -570,21 +456,186 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
+    <entry file="file://$PROJECT_DIR$/src/js/index/page-3-2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="61" column="45" lean-forward="false" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+        <state relative-caret-position="44">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index/tabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="436">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index/page-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/admin/event-hub.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/song/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="85" lean-forward="false" selection-start-line="8" selection-start-column="85" selection-end-line="8" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/song.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index/page-2-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="34" column="58" lean-forward="false" selection-start-line="34" selection-start-column="58" selection-end-line="34" selection-end-column="58" />
+          <folding>
+            <marker date="1526927854856" expanded="true" signature="78:102" ph="..." />
+            <marker date="1526927854856" expanded="true" signature="78:734" ph="..." />
+            <marker date="1526927854856" expanded="true" signature="169:719" ph="..." />
+            <marker date="1526927854856" expanded="true" signature="236:445" ph="..." />
+            <marker date="1526927854856" expanded="true" signature="287:380" ph="..." />
+            <marker date="1526927854856" expanded="true" signature="522:695" ph="..." />
+            <marker date="1526927854856" expanded="true" signature="575:670" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index/page-1-2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="49" column="9" lean-forward="true" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding>
+            <marker date="1526803649380" expanded="true" signature="79:604" ph="..." />
+            <marker date="1526803649380" expanded="true" signature="140:344" ph="..." />
+            <marker date="1526803649380" expanded="true" signature="191:284" ph="..." />
+            <marker date="1526803649380" expanded="true" signature="419:582" ph="..." />
+            <marker date="1526803649380" expanded="true" signature="421:582" ph="..." />
+            <marker date="1526803649380" expanded="true" signature="469:559" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/index/page-3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="82" column="42" lean-forward="true" selection-start-line="82" selection-start-column="42" selection-end-line="82" selection-end-column="42" />
+          <folding>
+            <marker date="1526928815730" expanded="true" signature="270:481" ph="..." />
+            <marker date="1526928815730" expanded="true" signature="320:393" ph="..." />
+            <marker date="1526928815730" expanded="true" signature="482:499" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/admin/song-list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="86">
-          <caret line="28" column="6" lean-forward="true" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
+        <state relative-caret-position="-16">
+          <caret line="83" column="40" lean-forward="false" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
           <folding>
             <marker date="1526553243280" expanded="true" signature="101:132" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/admin/upload-song.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="57" column="50" lean-forward="false" selection-start-line="57" selection-start-column="45" selection-end-line="57" selection-end-column="50" />
+          <folding>
+            <marker date="1526493116209" expanded="true" signature="113:292" ph="..." />
+            <marker date="1526493116209" expanded="true" signature="174:273" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/admin/song-form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="202" column="38" lean-forward="false" selection-start-line="202" selection-start-column="38" selection-end-line="202" selection-end-column="38" />
+          <folding>
+            <marker date="1526987010176" expanded="true" signature="164:1532" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="194:357" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="225:273" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="387:554" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="418:466" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="584:745" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="615:663" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="775:940" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="806:854" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="970:1135" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="1001:1049" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="1174:1348" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="1198:1246" ph="..." />
+            <marker date="1526987010176" expanded="true" signature="1385:1516" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/admin/loading.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="20" column="16" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/admin/new-song.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="67" column="23" lean-forward="true" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="89" column="0" lean-forward="false" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

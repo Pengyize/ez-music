@@ -30,9 +30,9 @@
             })
         },
         loadModule1(){
-            let script1 = document.createElement('script');
-            script1.src = './js/index/page-2-2.js';
-            document.body.appendChild(script1)
+            let script = document.createElement('script');
+            script.src = './js/index/page-2-2.js';
+            document.body.appendChild(script)
         },
     }
     controller.init(view,model)

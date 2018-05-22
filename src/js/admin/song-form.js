@@ -36,14 +36,15 @@
                 </label>
                 <input name="order" type="text" value="__order__">
             </div>
-            <div class="row">
+            <div class="row textArea">
                 <label>
                     歌词
                 </label>
-                <textarea name="lyrics" cols="100" rows="10" >__lyrics__</textarea>
+                <textarea name="lyrics" cols="52" rows="10" >__lyrics__</textarea>
             </div>
             <div class="row action">
                 <button type="submit">保存</button>
+                <button id="delete" type="button">删除</button>
             </div>
         </form>
         `,
@@ -54,11 +55,6 @@
                 html = html.replace(`__${string}__`,data[string] || '')
             })
             $(this.el).html(html);
-            if(data.id){
-                $(this.el).prepend('<h1>编辑歌曲</h1>')
-            }else{
-                $(this.el).prepend('<h1>新建歌曲</h1>')
-            }
         },
         reset(){
             this.render({});
@@ -131,6 +127,16 @@
                     return response
                 })
             }
+        },
+        delete(id){
+            let song = AV.Object.createWithoutData('Song', id);
+            return song.destroy().then(function (success) {
+                // 删除成功
+                console.log('删除成功',success)
+                return success
+            }, function (error) {
+                // 删除失败
+            });
         }
      };
     let controller = {
@@ -154,6 +160,7 @@
                 }
 
                 this.view.render(this.model.data)
+
             })
         },
         create(){
@@ -173,7 +180,6 @@
             let data = {};
             needs.map((string) => {
                 data[string] = this.view.$el.find(`[name = "${string}"]`).val();
-                console.log('data1',data)
             });
             this.model.update(data)
                 .then(()=>{
@@ -189,6 +195,14 @@
                         this.create();
                     }
                 return;
+            })
+            this.view.$el.on('click','#delete',()=>{
+                console.log(this.model.data.id)
+                this.model.delete(this.model.data.id)
+                    .then(()=>{
+                        alert('删除成功');
+                        location.reload()
+                    })
             })
         }
     };
