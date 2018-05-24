@@ -2,7 +2,7 @@
 
 ## Preview
 - [播放页面（移动端）](http://pengyize.top/ez-music/src)
-- [管理页面（PC）](http://pengyize.top/ez-music/src/admin)，通过本地服务器连接到七牛云服务器上传音乐
+- [管理页面（PC）](http://pengyize.top/ez-music/src/admin.html)，通过本地服务器连接到七牛云服务器上传音乐
 
 ## Technique Stack
 该项目包括 PC 端后台管理页面 以及 移动端播放页面，主要涉及到的技术有：
