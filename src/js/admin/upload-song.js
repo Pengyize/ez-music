@@ -3,26 +3,25 @@
         el: `.uploadArea`,
         template:`
         <div id="uploadButton" class="clickable">
-                <div id="uploadContainer" class="draggable">
-                    <p>点击或拖拽文件</p>
-                    <p>文件大小不能超过 40MB</p>
-                </div>
+            <div id="uploadContainer" class="draggable">
+                <p>点击或拖拽文件</p>
+                <p>文件大小不能超过 40MB</p>
             </div>
+        </div>
         `,
-        render(data){
+        render(){
             $(this.el).html(this.template);
         },
         find(selector){
             return $(this.el).find(selector)[0];
         }
-
     }
     let model = {}
     let controller = {
         init(view,model){
             this.view = view;
             this.model = model;
-            this.view.render(this.model.data);
+            this.view.render();
             this.initQiniu();
         },
         initQiniu(){
@@ -59,7 +58,6 @@
                             url: sourceLink,
                             name: res.key
                         })
-
                     },
                     'Error': function(up, err, errTip) {
                         //上传出错时,处理相关的事情

@@ -46,7 +46,6 @@
         init(view,model){
             this.view = view;
             this.model = model;
-            console.log('model1',this.model.data)
             this.view.render(this.model.data);
             this.bindEvents();
             this.bindEventHub();

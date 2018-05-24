@@ -99,38 +99,6 @@ header .logo{
     top: calc(50% - 12px);
     font-size: 16px;
 }
-/*.logo > .card::after{*/
-    /*content:'';*/
-    /*position: absolute;*/
-    /*top:0;*/
-    /*left: 0;*/
-    /*width: 200%;*/
-    /*height: 200%;*/
-    /*border: 1px solid white;*/
-    /*border-radius: 50px;*/
-    /*transform: scale(0.5);*/
-    /*transform-origin: 0 0;*/
-/*}*/
-/*header.topbar > a{*/
-    /*color: white;*/
-    /*display: inline-block;*/
-    /*padding: 5px 11px;*/
-    /*line-height: 20px;*/
-    /*position: relative;*/
-/*}*/
-/*header.topbar > a::after{*/
-    /*content:'';*/
-    /*position: absolute;*/
-    /*top:0;*/
-    /*left: 0;*/
-    /*width: 200%;*/
-    /*height: 200%;*/
-    /*border: 1px solid white;*/
-    /*border-radius: 50px;*/
-    /*transform: scale(0.5);*/
-    /*transform-origin: 0 0;*/
-/*}*/
-
 
 .newSong{
     text-align: center;
@@ -195,8 +163,11 @@ header .logo{
     line-height: 20px;
     font-size: 16px;
     color: #777;
-    padding-top: 10px;
+    padding-top: 16px;
     padding-bottom: 15px;
+}
+.draggable > p:nth-child(1){
+    padding-bottom: 0;
 }
 main{
     background: #fafafa ;
@@ -239,6 +210,8 @@ main > form > div > button{
     font-size: 14px;
 }
 main > form > div > button{
+    border: 1px solid #bb2a26;
+    color: #bb2a26;
     width: 180px;
 }
 main > form > div > button:hover{

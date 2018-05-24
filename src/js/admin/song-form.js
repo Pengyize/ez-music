@@ -74,7 +74,7 @@
             }else if(!singer) {
                 alert('你没有输入歌手哦~')
             }else if(!url) {
-                alert('你没有输入外链哦~')
+                alert('你没有输入歌曲外链哦~')
             }else if(!cover) {
                 alert('你没有输入封面url哦~')
             }else {
@@ -132,7 +132,6 @@
             let song = AV.Object.createWithoutData('Song', id);
             return song.destroy().then(function (success) {
                 // 删除成功
-                console.log('删除成功',success)
                 return success
             }, function (error) {
                 // 删除失败
@@ -158,9 +157,7 @@
                 }else{
                     Object.assign(this.model.data,data);
                 }
-
                 this.view.render(this.model.data)
-
             })
         },
         create(){
@@ -188,7 +185,7 @@
         },
         bindEvents(){
             this.view.$el.on('submit','form',(e)=>{ //事件委托，委托main监听form的提交事件
-                    e.preventDefault()
+                    e.preventDefault()  //阻止页面刷新
                     if(this.model.data.id){
                         this.update();
                     }else{

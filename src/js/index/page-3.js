@@ -15,7 +15,7 @@
             <svg class="icon" aria-hidden="true">
                 <use xlink:href="#icon-sousou"></use>
             </svg>
-            <a id="search-a" href="/src/song.html?id={{id}}">{{name}}</a>
+            <a id="search-a" href="/ez-music/src/song.html?id={{id}}">{{name}}</a>
         </li>
         
         `,
@@ -26,8 +26,7 @@
             let $li = $(this.template
                 .replace('{{id}}',id)
                 .replace('{{name}}',name))
-
-            $('#search-list').append($li)
+            $('#search-list').prepend($li)
         }
     }
     let model = {

@@ -4,7 +4,7 @@
         template:`
           新建歌曲
         `,
-        render(data){
+        render(){
             $(this.el).html(this.template);
         }
     }

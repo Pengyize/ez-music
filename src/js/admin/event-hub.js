@@ -1,6 +1,11 @@
 window.eventHub = {
     events: {
-        //'晚报'
+    },
+    on(eventName, fn){  //订阅
+        if(this.events[eventName] === undefined){
+            this.events[eventName] = []
+        }
+        this.events[eventName].push(fn)
     },
     emit(eventName, data){  //发布
         for(let key in this.events){
@@ -12,10 +17,5 @@ window.eventHub = {
             }
         }
     },
-    on(eventName, fn){  //订阅
-        if(this.events[eventName] === undefined){
-            this.events[eventName] = []
-        }
-        this.events[eventName].push(fn)
-    }
+
 }
