@@ -21,7 +21,6 @@
          </li>  
         
         `,
-
         init(){
             this.$el = $(this.el)
         },

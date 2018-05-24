@@ -10,7 +10,7 @@
 
             this.$el.find('img.cover').attr('src',song.cover);
 
-                if(this.$el.find('audio').attr('src') !== song.url){
+            if(this.$el.find('audio').attr('src') !== song.url){
                 let audio = this.$el.find('audio').attr('src',song.url).get(0);
                 audio.onended = ()=>{window.eventHub.emit('songEnd')}    //歌停封面停
                 audio.ontimeupdate = ()=>{this.showLyric(audio.currentTime)}    //获得歌曲播放的时间
@@ -25,10 +25,12 @@
             this.$el.find('.song-description>h1').text(song.name)   //渲染歌曲名
 
             let {lyrics} = song //获得歌词
+
             lyrics.split('\n').map((string)=>{
                 let p = document.createElement('p')
                 let regex = /\[([\d:.]+)\](.*)/;
                 let matches = string.match(regex);
+                console.log('mat',matches);
                 if(matches){
                     p.textContent = matches[2];
                     let oldTime = matches[1];

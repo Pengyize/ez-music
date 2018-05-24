@@ -3,20 +3,19 @@
         el: 'section.songs',
         template: `
         <li>
-                 <h3>{{song.name}}</h3>
-                 <p>
-                        <svg class="icon icon-sq">
-                            <use xlink:href="#icon-sq"></use>
-                        </svg>
-                     {{song.singer}}
-                  </p>
-                  <a class="playButton" href="./song.html?id={{song.id}}">
-                     <svg class="icon icon-play">
-                         <use xlink:href="#icon-play"></use>
-                      </svg>
-                  </a>
-                </li>  
-        
+            <h3>{{song.name}}</h3>
+            <p>
+                <svg class="icon icon-sq">
+                    <use xlink:href="#icon-sq"></use>
+                </svg>
+                {{song.singer}}
+            </p>
+            <a class="playButton" href="./song.html?id={{song.id}}">
+                <svg class="icon icon-play">
+                    <use xlink:href="#icon-play"></use>
+                </svg>
+            </a>
+        </li>  
         `,
 
         init(){

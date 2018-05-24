@@ -5,9 +5,7 @@
             this.$el = $(this.el)
         }
     }
-    let model = {
-
-    }
+    let model = {}
     let controller = {
         init(view,model){
             this.view = view;

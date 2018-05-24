@@ -213,6 +213,7 @@ main > form > div > button{
     border: 1px solid #bb2a26;
     color: #bb2a26;
     width: 180px;
+    background: white;
 }
 main > form > div > button:hover{
     background: #bb2a26;
