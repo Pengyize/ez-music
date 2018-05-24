@@ -1,4 +1,5 @@
 # 奕泽音乐
+一个精美的音乐播放器
 
 ## Preview
 - [播放页面（移动端）](http://pengyize.top/ez-music/src)
