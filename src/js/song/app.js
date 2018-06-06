@@ -30,7 +30,6 @@
                 let p = document.createElement('p')
                 let regex = /\[([\d:.]+)\](.*)/;
                 let matches = string.match(regex);
-                console.log('mat',matches);
                 if(matches){
                     p.textContent = matches[2];
                     let oldTime = matches[1];
